@@ -2,37 +2,52 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{display: inline-flex;}
+.i1{background-color:aquamarine ;
+height:100px;
+width: 500px;}
+.i2{width:200px;
+  background-color:aquamarine ;
+  height:100px;}
+.i3{width:200px;
+  background-color:aquamarine ;
+  height:100px;}
+.i4{width:200px;
+  background-color:aquamarine ;
+  height:100px;}
+
+  .todolist{background-color: aqua;
+  width: 500px;
+height:700px;
+position: relative;
+left:700px;
+top:50px}
+
+.todocheck{position: relative;
+right:230px;
+top:42px}
+
+.todoitem{background-color: aquamarine;
+width:460px;
+position: relative;
+left:40px;
+text-align: left;
+text-overflow: hidden    ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.login,.register{background-color: aqua;
+width:500px;
+height:350px;
+position: absolute;
+left:700px;
+top:250px}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.errormssg{width: 200px;
+height:70px ;
+background-color:red;
+position: absolute;
+top:480px;
+right: 870px;}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.show{visibility: visible;}
+.hidden{visibility:hidden;}
