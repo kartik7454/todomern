@@ -19,7 +19,7 @@ function Register() {
         const logincred ={email,password}
         
     
-         const response = await fetch('/register',{
+         const response = await fetch('https://todobackend-ee9t.onrender.com/register',{
              method:"POST",
              body :JSON.stringify(logincred),//convert to json from object
              headers:{
