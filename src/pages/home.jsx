@@ -14,7 +14,7 @@ function Home(id) {
     useEffect( ()=>{
 if(alo){const fetchtodo  = async ()=>{
            console.log(alo)
-        const response = await fetch ('/'+alo)
+        const response = await fetch ('https://todobackend-ee9t.onrender.com/'+alo)
         const json = await response.json()
         
         
@@ -38,7 +38,7 @@ if(alo){const fetchtodo  = async ()=>{
             var newitem = document.getElementById("addtodo").value;
             if(newitem!==""){proxytodo=Todo
              proxytodo.push(newitem)
-            const response = await fetch('/'+alo,{
+            const response = await fetch('https://todobackend-ee9t.onrender.com/'+alo,{
                 method:"PATCH",
                  body :JSON.stringify(proxytodo),//convert to json from object
                 headers:{
@@ -65,7 +65,7 @@ else{alert("please login")}
                console.log(yehwala)
 
 
-               const response = await fetch('/'+alo,{
+               const response = await fetch('https://todobackend-ee9t.onrender.com/'+alo,{
                 method:"PATCH",
                  body :JSON.stringify(yehwala),//convert to json from object
                 headers:{
