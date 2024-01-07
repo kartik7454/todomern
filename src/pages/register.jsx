@@ -1,12 +1,13 @@
 import '../App.css';
 import { useState } from "react";
 import Navbar from "../components/navbar";
-
+import {useNavigate } from "react-router-dom"
 
 
    
 
 function Register() {
+    const history = useNavigate()
     const [visi    ,setvisi] = useState(false)
 
     const handleSubmit= async (e)=>{
@@ -34,7 +35,7 @@ function Register() {
          if (response.ok){
         
           
-            console.log("new user added ")
+            history("/login")
             
          }
        }

@@ -1,11 +1,11 @@
 import '../App.css';
 import { useState } from "react";
 import Navbar from "../components/navbar";
+import {useNavigate } from "react-router-dom"
 
-var alo =null 
- 
-
+var alo = null
 function Login() {
+    const history = useNavigate();
     const [visi    ,setvisi] = useState(false)
 
     const handleSubmit= async (e)=>{
@@ -27,26 +27,14 @@ function Login() {
          const json = await response.json()
          if (!response.ok){
              console.log(json.error)
-             setvisi("true")
-            
-         }
+             setvisi("true")}
          if (response.ok){
-        
-          
-            console.log("loggedin ")
-            console.log(json.mssg)
-            // window.location.href = "http://localhost:3000/";
-                alo = json.mssg
-                console.log(alo)
-         }
+        console.log("loggedin ")
+            alo = json.mssg
+            history("/")}
        }
-
-
-
-
-    return(<div><Navbar />
-
-    <form onSubmit={handleSubmit}>
+return(<div><Navbar />
+<form onSubmit={handleSubmit}>
     <div className="login">
 <div><h1>login</h1></div>
 <div><label>email</label></div>
@@ -61,11 +49,6 @@ function Login() {
 
     <div className= {"errormssg " + (visi ? 'show' : 'hidden')}><h3>email does not  exists</h3></div>
     </div>
-      
-     
-     
-)
-
-}
+)}
 
 export {Login,alo} ;

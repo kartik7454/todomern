@@ -2,37 +2,41 @@
   text-align: center;
 }
 
-.navbar{display: inline-flex;}
-.i1{background-color:aquamarine ;
-height:100px;
-width: 500px;}
+.navbar{display: inline-flex;
+  background-color: rgb(232, 228, 228);
+height:100px}
+.i1{width: 500px;}
 .i2{width:200px;
-  background-color:aquamarine ;
-  height:100px;}
+   cursor:pointer;}
 .i3{width:200px;
-  background-color:aquamarine ;
-  height:100px;}
+  cursor:pointer;}
 .i4{width:200px;
-  background-color:aquamarine ;
-  height:100px;}
+  cursor:pointer;}
 
-  .todolist{background-color: aqua;
+ 
+
+  .todolist{background-color: rgb(223, 226, 226);
   width: 500px;
-height:700px;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 150px;
+
 position: relative;
-left:700px;
+left:500px;
 top:50px}
 
 .todocheck{position: relative;
+  
 right:230px;
 top:42px}
 
-.todoitem{background-color: aquamarine;
+.todoitem{
 width:460px;
 position: relative;
 left:40px;
 text-align: left;
 text-overflow: hidden    ;
+
 }
 
 .login,.register{background-color: aqua;
@@ -51,3 +55,21 @@ right: 870px;}
 
 .show{visibility: visible;}
 .hidden{visibility:hidden;}
+
+.deletebtn{position: relative;
+bottom:40px;
+left:200px}
+
+#addtodo{height:30px;
+margin-top: 50px;
+width: 440px;
+position: relative;
+left:-15px}
+
+
+.addbtn{height:36px;
+width:45px;
+position: relative;
+left:-15px}
+
+.checked{text-decoration: line-through;}
